@@ -38,7 +38,7 @@ def main():
                 sys.exit("Game over!")
             for shot in shots:
                 if shot.collision(asteriod):
-                    asteriod.kill()
+                    asteriod.split()
                     shot.kill()
 
         screen.fill("black")
